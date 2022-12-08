@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - Prints sized of characters
+ * main - Prints size of variables
  *
- *Return: Always 0 (success)
+ *Return: Always 0
  */
 int main(void)
 {
