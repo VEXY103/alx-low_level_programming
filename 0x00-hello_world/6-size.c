@@ -1,10 +1,9 @@
 #include <stdio.h>
 /**
-*main - entry point
-*Description: prints the bytes of each value
+*main - Entry point
+*
 *Result: Always 0
 */
-main(void)
 int main(void)
 {
 printf("Size of a char: %i byte(s)\n", sizeof(char));
