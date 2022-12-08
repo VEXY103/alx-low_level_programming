@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
 *main - entry point
-*
-*Result: always 0
+*Description: prints the bytes of each value
+*Result: Always 0
 */
 int main(void)
 {
