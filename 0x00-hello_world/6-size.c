@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
-*main - Entry point
-*
+*main - print size of numbers
 *Result: Always 0
 */
 int main(void)
