@@ -5,14 +5,11 @@
 */
 int main(void)
 {char c;
-for (c = 'a' ; c <= 'd' ; c++)
-{putchar(c);
+for (c = 'a' ; c <= 'z' ; c++)
+{if (c == 'e' && c == 'q')
+{continue
 }
-for (c = 'f' ; c <= 'p' ; c++)
-{putchar(c);
-}
-for (c = 'r' ; c <= 'z' ; c++)
-{putchar(c);
+putchar(c);
 }
 putchar('\n');
 return (0);
