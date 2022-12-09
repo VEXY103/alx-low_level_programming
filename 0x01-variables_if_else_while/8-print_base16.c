@@ -11,7 +11,7 @@ for (a = 0 ; a < 10 ; a++)
 putchar(a + '0');
 }
 char c;
-for (c = 'a' ; c <= 'z' ; c++)
+for (c = 'a' ; c <= 'f' ; c++)
 {putchar(c);
 }
 putchar('\n');
