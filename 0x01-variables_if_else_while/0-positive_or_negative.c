@@ -3,10 +3,8 @@
 #include <time.h>
 /* more headers goes there */
 /* betty style doc for function main goes there */
- *main - Entry point
- *
+/*main - Entry point
  *Description: 'Positive anything is better than negative nothing'
- *
  *Return: Always 0 (Success)
  */
 int main(void)
