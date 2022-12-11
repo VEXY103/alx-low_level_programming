@@ -5,7 +5,8 @@
 */
 int main(void){
 	int a, b;
-	for (a = '0'; a <= '9', a++){
+	for (a = '0'; a <= '9'; a++){
+		for (num2 = '0' ; num2 <= '9' ; num2++){
 		if (a < b){
 			putchar(a);
 			putchar(b);
