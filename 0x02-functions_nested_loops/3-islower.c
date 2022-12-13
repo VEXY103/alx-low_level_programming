@@ -2,7 +2,8 @@
 
 /**
  * main - check the code.
- *function that checks for lowercase character.
+ *_islower - Checks if a character is lowercase.
+ * @c: The character to be checked.
  * Return: Always 0.
  */
 int _islower(int c)
