@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- *  *main - start point
- *   *Return: Always 0 (Success)
- *    */
-
+ *main - start point
+ *Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char l;
@@ -12,6 +11,5 @@ int main(void)
 		_putchar(l);
 		_putchar('\n');
 	}
-
 	return (0);
 }
