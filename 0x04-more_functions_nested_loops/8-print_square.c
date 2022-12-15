@@ -21,6 +21,7 @@ b++;
 _putchar('\n');
 a++;
 }
+
 if (a == 0)
 {
 _putchar('\n');
