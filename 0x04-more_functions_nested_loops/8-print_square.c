@@ -6,14 +6,14 @@
  * Return: void
  */
 
-void print_square(int n)
+void print_square(int size)
 {
 int a = 0, b;
 
-while (a < n && n > 0)
+while (a < size && size > 0)
 {
 b = 0;
-while (b < n)
+while (b < size)
 {
 _putchar('#');
 b++;
