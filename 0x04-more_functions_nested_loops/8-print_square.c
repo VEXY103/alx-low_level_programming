@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- * print_square - check for a digit
- * size: size of the square
+ * print_square - it prints a square'
+ * @n: number of # to be printed
  * Return: void
  */
 
-void print_square(int size)
+void print_square(int n)
 {
 int a = 0, b;
 
-while (a < size && size > 0)
+while (a < n && n > 0)
 {
 b = 0;
-while (b < size)
+while (b < n)
 {
 _putchar('#');
 b++;
