@@ -8,32 +8,32 @@
 
 int main(void)
 {
-	int i = 1;
+	int n = 1;
 
-	while (i <= 100)
+	while (n <= 100)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		if (n % 3 == 0 && n % 5 == 0)
 		{
 			printf("FizzBuzz");
 		}
-		else if (i % 3 == 0)
+		else if (n % 3 == 0)
 		{
 			printf("Fizz");
 		}
-		else if (i % 5 == 0)
+		else if (n % 5 == 0)
 		{
 			printf("Buzz");
 		}
 		else
 		{
-			printf("%i", i);
+			printf("%n", n);
 		}
-		if (i != 100)
+		if (n != 100)
 		{
 			putchar(' ');
 		}
 
-		i++;
+		n++;
 	}
 	putchar('\n');
 	return (0);
