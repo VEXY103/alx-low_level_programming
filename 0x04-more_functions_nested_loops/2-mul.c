@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * int mul - multiplies two integers.
- * @a: It's the first integrer to be checked.
- * @b: It's the second integrer to be checked.
+ * mul - it gives the product of a and b
+ * @a: one variable
+ * @b: two variable
  *
- * Return: 0 
+ * Return: a * b
  */
 
 int mul(int a, int b)
