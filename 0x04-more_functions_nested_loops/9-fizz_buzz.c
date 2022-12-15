@@ -1,38 +1,39 @@
 #include <stdio.h>
 
 /**
- * print_square - it prints a square'
- * size: is the size of the square
+ * main - Fizz Buzz code
+ *
  * Return: void
  */
+
 int main(void)
 {
-	int n = 1;
+	int i = 1;
 
-	while (n <= 100)
+	while (i <= 100)
 	{
-		if (n % 3 == 0 && n % 5 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf("FizzBuzz");
 		}
-		else if (n % 3 == 0)
+		else if (i % 3 == 0)
 		{
 			printf("Fizz");
 		}
-		else if (n % 5 == 0)
+		else if (i % 5 == 0)
 		{
 			printf("Buzz");
 		}
 		else
 		{
-			printf("%n", n);
+			printf("%i", i);
 		}
-		if (n != 100)
+		if (i != 100)
 		{
 			putchar(' ');
 		}
 
-		n++;
+		i++;
 	}
 	putchar('\n');
 	return (0);
