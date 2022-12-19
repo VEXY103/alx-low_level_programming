@@ -22,5 +22,5 @@ while (t >= t / 2)
     _putchar(str[t]);
     t--;
 }
-return (0);
+_putchar('\n');
 }
