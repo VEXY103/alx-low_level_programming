@@ -17,10 +17,9 @@ while (str[t] != '\0')
 t++;
 }
 
-while (t >= t / 2)
+for (t = t / 2, t++)
 {
     _putchar(str[t]);
-    t--;
 }
 _putchar('\n');
 }
