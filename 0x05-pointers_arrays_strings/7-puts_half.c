@@ -21,14 +21,14 @@ if (t % 2 == 0)
 {
 for (t = t / 2; str[t]; t++)
 {
-    _putchar(str[t]);
+_putchar(str[t]);
 }
 }
 else
 {
-    for (t = (t / 2) + 1; str[t]; t++)
-    {
-    _putchar(str[t]);
+for (t = (t / 2) + 1; str[t]; t++)
+{
+_putchar(str[t]);
 }
 }
 _putchar('\n');
