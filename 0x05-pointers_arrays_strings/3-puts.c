@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-*_puts - prints a string
-*@str: A pointer to an int that will be changed
+*_puts - function that prints a string, followed by a new line.
+*@str: A pointer to an int.
 *
-*Return: void which means our answer is correct
+*Return: void
 */
 
 void _puts(char *str)
