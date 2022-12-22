@@ -4,6 +4,7 @@
  *_strcat - function that concatenates two strings.
  *@dest: first string.
  *@src: second string.
+ *@n: bytes.
  *Return: string.
  */
 
