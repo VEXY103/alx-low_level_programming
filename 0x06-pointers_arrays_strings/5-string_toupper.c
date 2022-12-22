@@ -5,6 +5,7 @@
  * @str: The string to be changed.
  * Return: A pointer.
  */
+
 char *string_toupper(char *str)
 {
 	int i = 0;
