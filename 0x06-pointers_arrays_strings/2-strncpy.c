@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strncpy - function that concatenates two strings.
+ * _strncpy -  function that copies a string.
  * @dest: first string.
  * @src: second string.
- * @n: amount of bytes from src.
+ * @n: bytes.
  * Return: string
  */
 
