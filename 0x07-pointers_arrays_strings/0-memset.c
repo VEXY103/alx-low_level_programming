@@ -8,7 +8,6 @@
  * @n: bytes of the memory area pointed to by s.
  * Return: s
  */
-
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int a;
@@ -17,6 +16,6 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		s[a] = b;
 	}
-
+    
 	return (s);
 }
