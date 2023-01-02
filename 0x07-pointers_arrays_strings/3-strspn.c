@@ -20,6 +20,6 @@ unsigned int _strspn(char *s, char *accept)
                 c = c + 1;
             }
         }
-        return(c);
     }
+    return(c);
 }
