@@ -8,11 +8,13 @@
  * @n: bytes of the memory area pointed to by s.
  * Return: s
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int a;
+	a = 0;
 
-	for (a = 0; n > 0; a++, n--)
+	for ( n > 0; a++; n-- )
 	{
 		s[a] = b;
 	}
