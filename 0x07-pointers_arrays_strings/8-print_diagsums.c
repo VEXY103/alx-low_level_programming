@@ -16,9 +16,15 @@ void print_diagsums(int *a, int size)
 	for (b = 0; b < (size * size); b++)
 	{
 		if (b % (size + 1) == 0)
+		{
 			c += *(a + b);
+		}
+
 		if (b % (size - 1) == 0 && b != 0 && b < size * size - 1)
+		{
 			d += *(a + b);
+		}
 	}
+	
 	printf("%d, %d\n", c, d);
 }
