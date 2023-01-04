@@ -10,21 +10,21 @@
 
 int divide(int i, int d)
 {
-	if (i % d == 0)
-    {
-        return (0);
-    }
-		
-	if (d == i / 2)
-    {
-        return (1);
-    }
+if (i % d == 0)
+{
+return (0);
+}
 
-	return (divide(i, d + 1));
+if (d == i / 2)
+{
+return (1);
+}
+
+return (divide(i, d + 1));
 }
 
 /**
- * is_prime_number - function that returns 1 if the input 
+ * is_prime_number - function that returns 1 if the input
  * integer is a prime number, otherwise return 0.
  * @n: number.
  * Return: If the integer is not prime - 0.
@@ -33,17 +33,17 @@ int divide(int i, int d)
 
 int is_prime_number(int n)
 {
-	int d = 2;
+int d = 2;
 
-	if (n <= 1)
-    {
-        return (0);
-    }
+if (n <= 1)
+{
+return (0);
+}
 
-	if (n >= 2 && n <= 3)
-    {
-        return (1);
-    }
+if (n >= 2 && n <= 3)
+{
+return (1);
+}
 
-	return (divide(n, d));
+return (divide(n, d));
 }
