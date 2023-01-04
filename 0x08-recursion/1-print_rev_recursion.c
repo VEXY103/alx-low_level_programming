@@ -10,13 +10,15 @@ void _print_rev_recursion(char *s)
 {
 	int a = 0;
 
-	while (s[a] != '\0')
-	{
-		a++;
-	}
-	if(a != 0)
+	if(s[a] != '\0')
     {
-        _print_rev_recursion(s);
-        a--;
+        a++;
+        return(s);
+
+        if(s[a] == '\0')
+        {
+            _print_rev_recursion(s-1);
+        }
+        
     }
 }
