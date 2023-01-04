@@ -2,8 +2,8 @@
 
 /**
  * square - function that finds the natural square root of an inputted number.
- * @num: number.
- * @root: root.
+ * @i: number.
+ * @r: root.
  * Return: If the number has a natural square root - the square root.
  * If the number does not have a natural square root - -1.
  */
