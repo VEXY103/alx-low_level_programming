@@ -1,18 +1,12 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - function that returns the natural square root of a number.
- * @n: number.
- * Return: If n has a natural square root - the natural square root of n.
- * If n does not have a natural square root - -1.
+ * square - function that finds the natural square root of an inputted number.
+ * @num: number.
+ * @root: root.
+ * Return: If the number has a natural square root - the square root.
+ * If the number does not have a natural square root - -1.
  */
-
-/**
- * square - function that finds the natural square root
- * of an inputted number.
- * @i: number.
- * @r: root.
-*/
 
 int square(int i, int r)
 {
@@ -25,6 +19,12 @@ int square(int i, int r)
 	return (square(i, r + 1));
 }
 
+/**
+ * _sqrt_recursion - function that returns the natural square root of a number.
+ * @n: number.
+ * Return: If n has a natural square root - the natural square root of n.
+ * If n does not have a natural square root - -1.
+ */
 
 int _sqrt_recursion(int n)
 {
