@@ -3,14 +3,14 @@
 
 /**
  * main - program that multiplies two numbers.
- * @argc: Number of command line arguments.
- * @argv: Array name.
+ * @argc: argument count.
+ * @argv: arguments.
  * Return: 0
  */
 
-int main(int argc, char *argv)
+int main(int argc, char **argv)
 {
-	int a, b;
+	int x, y;
 
 	if (argc < 3)
 	{
@@ -18,9 +18,9 @@ int main(int argc, char *argv)
 		return (1);
 	}
 
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
-	printf("%d\n", a * b);
+	x = atoi(argv[1]);
+	y = atoi(argv[2]);
+	printf("%d\n", x * y);
 
 	return (0);
 }
