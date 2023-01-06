@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
- * main - function that prints the name of the program.
+ * main - program that multiplies two numbers.
  * @argc: Number of command line arguments.
  * @argv: Array name.
  * Return: 0
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv)
 {
 	int a, b;
 
