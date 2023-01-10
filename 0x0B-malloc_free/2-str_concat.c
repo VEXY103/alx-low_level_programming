@@ -41,7 +41,7 @@ char *str_concat(char *s1, char *s2)
         _putchar (s1[i]);
         i++;
     }
-    _putchar(' ');
+    
     while (*s2)
     {
         _putchar (s2[j]);
