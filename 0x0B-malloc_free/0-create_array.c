@@ -13,19 +13,18 @@
 
 char *create_array(unsigned int size, char c)
 {
-    char* ptr;
 	unsigned int i;
 
-	ptr = (char*)malloc(size * sizeof(char));
+	c = (char*)malloc(size * sizeof(char));
 
-	if (ptr == NULL) 
+	if (c == NULL) 
     {
 		exit(0);
 	}
 	else {
 		for (i = 0; i < size; ++i) 
         {
-			_putchar(ptr[i] = c);
+			_putchar(c[i]);
 		}
 	}
 
