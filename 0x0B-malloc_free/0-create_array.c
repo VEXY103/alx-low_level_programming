@@ -19,9 +19,9 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 		return (NULL);
 
-	array = malloc(sizeof(char) * size);
+	sentence = malloc(sizeof(char) * size);
 
-	if (array == NULL)
+	if (sentence == NULL)
 		return (NULL);
 
 	for (i = 0; i < size; i++)
