@@ -13,20 +13,19 @@
 
 char *create_array(unsigned int size, char c)
 {
+	char *sentence;
 	unsigned int i;
 
-	c = (char*)malloc(size * sizeof(char));
+	if (size == 0)
+		return (NULL);
 
-	if (c == NULL) 
-    {
-		exit(0);
-	}
-	else {
-		for (i = 0; i < size; ++i) 
-        {
-			_putchar(c[i]);
-		}
-	}
+	array = malloc(sizeof(char) * size);
 
-	return (0);
+	if (array == NULL)
+		return (NULL);
+
+	for (i = 0; i < size; i++)
+		sentence[i] = c;
+
+	return (array);
 }
