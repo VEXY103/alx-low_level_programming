@@ -28,7 +28,7 @@ char *create_array(unsigned int size, char c)
 			ptr[i] = i + 1;
 		}
 
-		for (i = 0; i < n; ++i) 
+		for (i = 0; i < size; ++i) 
         {
 			_putchar(ptr[i]);
 		}
