@@ -5,62 +5,6 @@
 #include <stdbool.h>
 
 /**
- * convert - function that'll count the change.
- * @a: number.
- * Return: number of coins for the change.
- */
-
-int convert(int a)
-{
-	int sum = 0;
-
-	while (a != 0)
-	{
-		if (a % 10 == 9 || a % 10 == 7)
-        {
-            a -= 2;
-        }
-
-		else if (a % 25 == 0)
-        {
-            a -= 25;
-        }
-
-		else if (a % 10 == 0)
-        {
-            a -= 10;
-        }
-
-		else if (a % 5 == 0)
-        {
-            a -= 5;
-        }
-
-		else if (a % 2 == 0)
-		{
-			if (a % 10 == 6)
-            {
-                a -= 1;
-            }
-
-			else
-            {
-                a -= 2;
-            }
-		}
-		else
-        {
-            a -= 1;
-        }
-
-		sum++;
-	}
-
-	return (sum);
-}
-
-
-/**
  * main - basic function.
  * @argc: argument count.
  * @argv: array.
@@ -69,29 +13,39 @@ int convert(int a)
 
 int main(int argc, char *argv[])
 {
-	int a, cents;
+int a, b, c, d;
+int change[] = {25, 10, 5, 2, 1};
 
-	cents = 0;
+a = b = c = d = 0;
 
-	if (argc != 2)
-	{
-		printf("Error\n");
-		return (1);
-	}
+if (argc != 2)
+{
+printf("Error\n");
+return (1);
+}
 
-	a = atoi(argv[1]);
+b = atoi(argv[1]);
 
-	if (a < 0)
-    {
-        printf("0\n");
-    }
+if (b <= 0)
+{
+printf("0\n");
+return (0);
+}
 
-	else
-	{
-		cents = convert(a);
+while (change[a] != '\0')
 
-		printf("%d\n", cents);
-	}
+{
+if (b >= change[a])
+{
+d = (b / change[a]);
+c += d;
+b -= change[a] * d;
+}
 
-	return (0);
+a++;
+
+}
+
+printf("%d\n", c);
+return (0);
 }
