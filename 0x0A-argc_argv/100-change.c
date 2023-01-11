@@ -10,47 +10,47 @@
  * Return: number of coins for the change.
  */
 
-int convert(int i)
+int convert(int a)
 {
 	int sum = 0;
 
-	while (i != 0)
+	while (a != 0)
 	{
-		if (i % 10 == 9 || i % 10 == 7)
+		if (a % 10 == 9 || a % 10 == 7)
         {
-            i -= 2;
+            a -= 2;
         }
 
-		else if (i % 25 == 0)
+		else if (a % 25 == 0)
         {
-            i -= 25;
+            a -= 25;
         }
 
-		else if (i % 10 == 0)
+		else if (a % 10 == 0)
         {
-            i -= 10;
+            a -= 10;
         }
 
-		else if (i % 5 == 0)
+		else if (a % 5 == 0)
         {
-            i -= 5;
+            a -= 5;
         }
 
-		else if (i % 2 == 0)
+		else if (a % 2 == 0)
 		{
-			if (i % 10 == 6)
+			if (a % 10 == 6)
             {
-                i -= 1;
+                a -= 1;
             }
 
 			else
             {
-                i -= 2;
+                a -= 2;
             }
 		}
 		else
         {
-            i -= 1;
+            a -= 1;
         }
 
 		sum++;
