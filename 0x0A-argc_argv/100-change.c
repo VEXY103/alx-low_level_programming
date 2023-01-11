@@ -50,7 +50,7 @@ int convert(int i)
 
 int main(int argc, char *argv[])
 {
-	int i, cents;
+	int a, cents;
 
 	cents = 0;
 
@@ -60,14 +60,14 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	i = atoi(argv[1]);
+	a = atoi(argv[1]);
 
-	if (i < 0)
+	if (a < 0)
 		printf("0\n");
 
 	else
 	{
-		cents = convert(i);
+		cents = convert(a);
 
 		printf("%d\n", cents);
 	}
