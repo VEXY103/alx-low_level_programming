@@ -5,40 +5,41 @@
 #include <stdbool.h>
 
 /**
- * change - function that'll count the change.
+ * convert - function that'll count the change.
  * @a: number.
  * Return: number of coins for the change.
  */
 
-int change(int a)
+int convert(int i)
 {
-	int b = 0;
+	int sum = 0;
 
-	while (a != 0)
+	while (i != 0)
 	{
-		if (a % 10 == 9 || a % 10 == 7)
-			a -= 2;
-		else if (a % 25 == 0)
-			a -= 25;
-		else if (a % 10 == 0)
-			a -= 10;
-		else if (a % 5 == 0)
-			a -= 5;
-			else if (a % 2 == 0)
+		if (i % 10 == 9 || i % 10 == 7)
+			i -= 2;
+		else if (i % 25 == 0)
+			i -= 25;
+		else if (i % 10 == 0)
+			i -= 10;
+		else if (i % 5 == 0)
+			i -= 5;
+			else if (i % 2 == 0)
 		{
-			if (a % 10 == 6)
-				a -= 1;
+			if (i % 10 == 6)
+				i -= 1;
 			else
-				a -= 2;
+				i -= 2;
 		}
 		else
-			a -= 1;
+			i -= 1;
 
-		b++;
+		sum++;
 	}
 
-	return (b);
+	return (sum);
 }
+
 
 /**
  * main - basic function.
@@ -49,7 +50,7 @@ int change(int a)
 
 int main(int argc, char *argv[])
 {
-	int a, money;
+	int i, money;
 
 	money = 0;
 
@@ -59,14 +60,14 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	a = atoi(argv[1]);
+	i = atoi(argv[1]);
 
-	if (a < 0)
+	if (i < 0)
 		printf("0\n");
 
 	else
 	{
-		money = change(a);
+		money = convert(i);
 
 		printf("%d\n", money);
 	}
