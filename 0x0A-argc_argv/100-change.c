@@ -50,9 +50,9 @@ int convert(int i)
 
 int main(int argc, char *argv[])
 {
-	int i, money;
+	int i, cents;
 
-	money = 0;
+	cents = 0;
 
 	if (argc != 2)
 	{
@@ -67,9 +67,9 @@ int main(int argc, char *argv[])
 
 	else
 	{
-		money = convert(i);
+		cents = convert(i);
 
-		printf("%d\n", money);
+		printf("%d\n", cents);
 	}
 
 	return (0);
