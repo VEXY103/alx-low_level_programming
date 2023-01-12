@@ -6,7 +6,7 @@
  * @ptr: pointer to the memory previously allocated.
  * @old_size: preivous size.
  * @new_size: new size.
- * Return: ptr if new_size == old_size, null if new_size == 0 
+ * Return: ptr if new_size == old_size, null if new_size == 0
  * and ptr is not NULL.
  */
 
