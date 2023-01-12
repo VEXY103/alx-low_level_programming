@@ -4,6 +4,8 @@
 /**
  * string_nconcat - function that concatenates two strings.
  * @n: number of bytes of s2 to be printed.
+ * @s1: The first string.
+ * @s2: The second string.
  * Return: Null the function fails, it should return NULL.
  */
 
