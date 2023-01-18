@@ -2,7 +2,7 @@
 #define CALC_H
 
 /*
- * Desc: Header file with structures and prototypes.
+ * Descritpion: Header file with structures and prototypes.
  */
 
 /**
