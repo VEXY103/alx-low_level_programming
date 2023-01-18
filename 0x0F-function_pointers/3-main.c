@@ -30,8 +30,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		exit(99);
 	}
 
-	if ((*op == '/' && n2 == 0) ||
-	    (*op == '%' && n2 == 0))
+	if ((*op == '/' && n2 == 0) || (*op == '%' && n2 == 0))
 	{
 		printf("Error\n");
 		exit(100);
