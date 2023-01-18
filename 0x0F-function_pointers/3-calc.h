@@ -1,6 +1,10 @@
 #ifndef CALC_H
 #define CALC_H
 
+/*
+ * Description: Header file.
+ */
+
 /**
  * struct op - structure.
  * @op: operator.
