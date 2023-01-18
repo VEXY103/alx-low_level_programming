@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 			printf("%02hhx\n", array[b]);
 			break;
 		}
-		printf("%02hhx ", array[BUS_OBJERR]);
+		printf("%02hhx ", array[b]);
 	}
 	return (0);
 }
