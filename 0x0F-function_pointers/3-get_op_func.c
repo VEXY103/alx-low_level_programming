@@ -2,22 +2,20 @@
 #include <stdlib.h>
 
 /**
- * get_op_func - function that selects the correct function.
- * to perform the operation asked by the user.
+ * get_op_func - funtion that selects the correct function to perform
+ * the operation asked by the user.
  * @s: operator.
  * Return: pointer.
  */
-
 int (*get_op_func(char *s))(int, int)
 {
-	op_t ops[] =
-	{
+	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
 		{"/", op_div},
 		{"%", op_mod},
-		{NULL, NULL},
+		{NULL, NULL}
 	};
 	int i = 0;
 
